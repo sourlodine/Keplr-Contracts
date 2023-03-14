@@ -1,0 +1,22 @@
+[package]
+description = "Bridge"
+edition = "2018"
+name = "bridge"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "bridge"
+
+[features]
+cpi = ["no-entrypoint"]
+default = []
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+
+[dependencies]
+anchor-lang = "0.23.0"
+anchor-spl = "0.23.0"
+spl-token="3.1.1"
+solana-program="1.8.5"
